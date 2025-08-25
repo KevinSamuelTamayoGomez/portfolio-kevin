@@ -1,57 +1,76 @@
-const whatsappDigits = '529612627700' // +52 (México) + tu número sin espacios
+const whatsappDigits = '529612627700'
 
 export const PROFILE = {
   name: 'Kevin Samuel Tamayo Gómez',
-  role: 'Desarrollador Freelance — Webs & Apps',
-  tagline: 'Desarrollo páginas rápidas y apps prácticas para negocios y emprendedores.',
+  role: 'Backend-first — Sistemas POS, APIs y Webs',
+  tagline: 'Construyo sistemas de punto de venta (POS), APIs robustas y frontends claros para negocios.',
   location: 'México',
   email: 'kevin.samuel.gomez@outlook.com',
   phone: '+52 961 262 7700',
-  github: 'https://github.com/',         // pon tu usuario cuando lo tengas
-  linkedin: 'https://linkedin.com/in/',   // pon tu perfil cuando lo tengas
+  github: 'https://github.com/KevinSamuelTamayoGomez',
+  linkedin: 'https://linkedin.com/in/', // agrega cuando lo tengas
   website: '#',
   ctaLink: `https://wa.me/${whatsappDigits}?text=Hola%20Kevin%2C%20vi%20tu%20portafolio%20y%20quiero%20hablar%20de%20un%20proyecto.`
 }
 
 export const SERVICES = [
-  { title: 'Landing Pages', desc: 'SEO básico y performance alto (Lighthouse 90+).', tags: ['React', 'Tailwind', 'Vite'], price: 'desde $300 USD' },
-  { title: 'Web Corporativa', desc: 'Sitios completos con blog, formularios y CMS opcional.', tags: ['React', 'Headless CMS'], price: 'desde $600 USD' },
-  { title: 'Apps MVP', desc: 'Prototipos funcionales para validar ideas rápido.', tags: ['React Native (opcional)', 'Firebase'], price: 'desde $1,000 USD' },
-  { title: 'Automatizaciones', desc: 'Integraciones con APIs, chatbots y flujos.', tags: ['APIs', 'Automation'], price: 'a medida' },
+  {
+    title: 'Sistema POS para cafeterías',
+    desc: 'Pedidos, caja, recibos, inventario y reportes. Integración con impresoras/QR.',
+    tags: ['Node.js', 'PostgreSQL', 'Prisma', 'React'],
+    price: 'a medida'
+  },
+  {
+    title: 'APIs y Backends',
+    desc: 'Diseño e implementación de APIs seguras y escalables.',
+    tags: ['Node', 'Express', 'JWT', 'Docker'],
+    price: 'a medida'
+  },
+  {
+    title: 'Dashboards/Admin',
+    desc: 'Paneles con métricas de ventas, productos y usuarios.',
+    tags: ['React', 'Vite', 'Tailwind'],
+    price: 'desde $600 USD'
+  },
+  {
+    title: 'Webs de marca',
+    desc: 'Landing corporativa rápida y SEO básico.',
+    tags: ['React', 'Vite'],
+    price: 'desde $300 USD'
+  },
 ]
 
-// por ahora sin demos reales: dejamos “Próximamente” y # como URL
 export const PROJECTS = [
   {
-    title: 'Restaurante — Próximamente',
-    type: 'Landing Page',
-    result: 'Reservas online (demo)',
-    desc: 'Landing mobile-first con formulario y mapa.',
-    img: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600&auto=format&fit=crop',
+    title: 'Café POS — MVP (en progreso)',
+    type: 'Sistema POS',
+    result: 'Pedidos + tickets; módulos: mesas, caja, inventario',
+    desc: 'Diseño backend-first: Node + PostgreSQL + Prisma. Front en React/Tailwind. Próximamente demo pública.',
+    img: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1600&auto=format&fit=crop',
+    url: '#',
+    stack: ['Node', 'Express', 'PostgreSQL', 'Prisma', 'React', 'Vite', 'Tailwind']
+  },
+  {
+    title: 'Dashboard ventas — demo',
+    type: 'Admin Panel',
+    result: 'Tabla + filtros + gráficos (mock)',
+    desc: 'UI base para administrar categorías, productos y roles.',
+    img: 'https://images.unsplash.com/photo-1551281044-8e1494b3f83b?q=80&w=1600&auto=format&fit=crop',
+    url: '#',
+    stack: ['React', 'Vite', 'Tailwind']
+  },
+  {
+    title: 'Web de marca para cafetería — demo',
+    type: 'Landing',
+    result: 'Performance 90+',
+    desc: 'Sitio sencillo para mostrar menú, horarios y ubicación.',
+    img: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1600&auto=format&fit=crop',
     url: '#',
     stack: ['React', 'Tailwind', 'Vite']
-  },
-  {
-    title: 'E‑commerce — Próximamente',
-    type: 'E‑commerce Demo',
-    result: 'Checkout simple',
-    desc: 'Catálogo y carrito (demo).',
-    img: 'https://images.unsplash.com/photo-1521334726092-b509a19597d1?q=80&w=1600&auto=format&fit=crop',
-    url: '#',
-    stack: ['React', 'Stripe (demo)']
-  },
-  {
-    title: 'Taskly — Próximamente',
-    type: 'App MVP',
-    result: 'Login + CRUD (demo)',
-    desc: 'App básica con auth y lista de tareas.',
-    img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop',
-    url: '#',
-    stack: ['Expo/React Native', 'Firebase']
   }
 ]
 
 export const TESTIMONIALS = [
-  { quote: 'Profesional y rápido. La comunicación fue clara todo el tiempo.', author: 'Cliente (demo)' },
-  { quote: 'El resultado superó lo que teníamos en mente.', author: 'Empresa (demo)' },
+  { quote: 'Kevin nos ayudó a estructurar el backend del POS con buenas prácticas.', author: 'Dueño de café (demo)' },
+  { quote: 'Comunicación clara y entregas puntuales.', author: 'Cliente (demo)' },
 ]

@@ -1,19 +1,44 @@
+/* Tipografías (ligero y moderno) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap");
+
 @import "tailwindcss";
 
-/* Tokens/tema (v4) */
+/* 🎨 Tema café + acentos */
 @theme {
-  --color-brand: #0ea5e9;
-  --color-brand-dark: #0284c7;
-  --shadow-soft: 0 10px 25px -10px rgba(0,0,0,.15);
+  --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Colores “café” */
+  --color-espresso: #3b2f2f;      /* texto principal */
+  --color-caramel:  #a97155;       /* acento cálido */
+  --color-crema:    #efe7dd;       /* chips/badges */
+  --color-foam:     #f7f3ef;       /* fondo base */
+  --color-brand:    #7a563e;       /* botón primario */
+  --color-brand-dark:#553b2b;      /* hover */
+  --color-mint:     #14b8a6;       /* acento secundario */
+
+  --shadow-soft: 0 12px 28px -12px rgba(0,0,0,.18);
 }
 
-/* Utilidades personalizadas con @apply (funciona en v4) */
-.btn{
-  @apply inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-brand text-white font-medium shadow-soft hover:bg-brand-dark transition;
+/* 🔘 Botones y componentes reutilizables */
+.btn {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-2xl font-medium shadow-[var(--shadow-soft)] transition;
 }
-.badge{
-  @apply inline-flex items-center px-2 py-0.5 rounded-xl text-xs font-medium bg-zinc-100 text-zinc-700;
-}
-.card{
-  @apply bg-white rounded-3xl shadow-soft border border-zinc-100;
+.btn-primary { @apply bg-brand text-white hover:bg-brand-dark; }
+.btn-ghost   { @apply border border-espresso/15 bg-white/70 hover:bg-white; }
+
+.badge { @apply inline-flex items-center px-2 py-0.5 rounded-xl text-xs font-medium bg-crema text-espresso/80; }
+.card  { @apply bg-white/90 backdrop-blur rounded-3xl border border-espresso/10 shadow-[var(--shadow-soft)]; }
+
+/* 🌫️ Vidrio suave para heros */
+.glass   { @apply bg-white/50 backdrop-blur border border-white/40 rounded-3xl; }
+
+/* 🧵 Chips para stack */
+.chip { @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs bg-espresso/5 text-espresso/80 border border-espresso/10; }
+
+/* 🎛️ Patrón de fondo sutil para el hero */
+.pattern-cafe {
+  background-image:
+    radial-gradient(1200px 500px at 10% -10%, color-mix(in oklab, var(--color-brand) 12%, transparent) 0%, transparent 100%),
+    radial-gradient(800px 400px at 90% 0%, color-mix(in oklab, var(--color-mint) 12%, transparent) 0%, transparent 100%);
 }
