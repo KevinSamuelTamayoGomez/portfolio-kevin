@@ -14,7 +14,6 @@ export default function About() {
           <h4 className="font-semibold">Proceso de trabajo</h4>
           <ol className="mt-3 space-y-2 text-sm text-zinc-600 list-decimal list-inside">
             <li>Brief rápido: objetivos, referencias y alcance.</li>
-            <li>Propuesta + cotización: entregables y tiempos.</li>
             <li>Anticipo 50% y kick-off del proyecto.</li>
             <li>Iteraciones con demo y feedback.</li>
             <li>Entrega final + soporte.</li>
