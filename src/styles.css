@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Tokens/tema (v4) */
+@theme {
+  --color-brand: #0ea5e9;
+  --color-brand-dark: #0284c7;
+  --shadow-soft: 0 10px 25px -10px rgba(0,0,0,.15);
+}
+
+/* Utilidades personalizadas con @apply (funciona en v4) */
+.btn{
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-brand text-white font-medium shadow-soft hover:bg-brand-dark transition;
+}
+.badge{
+  @apply inline-flex items-center px-2 py-0.5 rounded-xl text-xs font-medium bg-zinc-100 text-zinc-700;
+}
+.card{
+  @apply bg-white rounded-3xl shadow-soft border border-zinc-100;
+}
