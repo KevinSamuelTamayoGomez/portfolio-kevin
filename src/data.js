@@ -16,27 +16,27 @@ export const PROFILE = {
 export const SERVICES = [
   {
     title: 'Sistema POS para cafeterías',
-    desc: 'Pedidos, caja, recibos, inventario y reportes. Integración con impresoras/QR.',
-    tags: ['Node.js', 'PostgreSQL', 'Prisma', 'React'],
-    price: 'a medida'
+    desc: 'MVP: productos, caja y tickets. Pro: mesas, inventario, usuarios y más.',
+    tags: ['Node.js', 'SQLite', 'Electron', 'JavaScript', 'CSS'],
+    price: 'MVP desde $15,000 MXN (Pro hasta $40,000 MXN)'
   },
   {
-    title: 'APIs y Backends',
+    title: 'APIs basicas',
     desc: 'Diseño e implementación de APIs seguras y escalables.',
     tags: ['Node', 'Express', 'JWT', 'Docker'],
-    price: 'a medida'
+    price: 'desde $6,000 MXN (o $250 MXN/h)'
   },
   {
     title: 'Dashboards/Admin',
     desc: 'Paneles con métricas de ventas, productos y usuarios.',
     tags: ['React', 'Vite', 'Tailwind'],
-    price: 'desde $600 USD'
+    price: 'desde $8,000 – $18,000 MXN'
   },
   {
     title: 'Webs de marca',
     desc: 'Landing corporativa rápida y SEO básico.',
     tags: ['React', 'Vite'],
-    price: 'desde $300 USD'
+    price: 'desde $7,000 – $15,000 MXN'
   },
 ]
 
@@ -48,7 +48,7 @@ export const PROJECTS = [
     desc: 'Diseño backend-first: Node + PostgreSQL + Prisma. Front en React/Tailwind. Próximamente demo pública.',
     img: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1600&auto=format&fit=crop',
     url: '#',
-    stack: ['Node', 'Express', 'PostgreSQL', 'Prisma', 'React', 'Vite', 'Tailwind']
+    stack: ['Node', 'Electron', 'SQLite', 'JavaScript', 'CSS']
   },
   {
     title: 'Dashboard ventas — demo',
